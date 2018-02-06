@@ -6,4 +6,4 @@ def index(request):
 
 def imie(request, name):
 	agent = request.META['HTTP_USER_AGENT']
-	return HttpResponse("Aloha {}. To jest {}".format(name, agent))
+	return render(request, 'xie/index.html', {'title': 'Aloha gnoju', 'name': name})

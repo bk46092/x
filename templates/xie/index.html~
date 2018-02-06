@@ -1,8 +1,4 @@
 {% extends 'xie/base.html' %}
 {% block body %}
-{% if name %}
-<h1>Aloha {{ name }}</h1>
-{% else %}
 <h1>Aloha stara</h1>
-{% endif %}
 {% endblock %}
